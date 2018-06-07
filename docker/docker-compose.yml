@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+  # @see https://hub.docker.com/_/postgres/
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  
+  web:
+    image: april19/webapp
+    build: .
+    restart: always
+    ports:
+      - 5000:5000

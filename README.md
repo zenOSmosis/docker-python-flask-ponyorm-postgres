@@ -1,4 +1,4 @@
-# Prototype Python, Flask, PonyORM, and Postgres stack
+# Prototype Python, Flask, PonyORM, and PostgreSQL Stack
 
 ## Prerequisites
 
